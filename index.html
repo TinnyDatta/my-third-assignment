@@ -7,6 +7,10 @@
     <!-- taiwind and daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- google font : manrope -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <!-- tailwind config -->
 <script>
     tailwind.config = {
@@ -19,13 +23,93 @@
       }
     }
   </script>
+  <style>
+    .font-manrope{
+        font-family: 'Manrope', sans-serif;
+    }
+  </style>
 </head>
 <body>
     <header>
-
+  <div class="container font-manrope px-5 py-10 mx-auto lg:px-32 ">
+    <div class="carousel">
+        <div id="slide1" class="carousel-item relative  w-full">
+          <img src="/images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform translate-y-28 lg:-translate-y-8 left-8 right-[1130px] lg:top-[550px]">
+            <a href="#slide4" class="btn btn-circle bg-[#131318] text-white border-none">❮</a> 
+            <a href="#slide2" class="btn btn-circle  bg-[#131318] text-white border-none">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-8 left-8 right-[1130px] top-[550px]">
+            <a href="#slide1" class="btn btn-circle bg-[#131318] text-white border-none">❮</a> 
+            <a href="#slide3" class="btn btn-circle bg-[#131318] text-white border-none">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-8 left-8 right-[1130px] top-[550px]">
+            <a href="#slide2" class="btn btn-circle bg-[#131318] text-white border-none">❮</a> 
+            <a href="#slide4" class="btn btn-circle bg-[#131318] text-white border-none">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-8 left-8 right-[1130px] top-[550px]">
+            <a href="#slide3" class="btn btn-circle bg-[#131318] text-white border-none">❮</a> 
+            <a href="#slide1" class="btn btn-circle bg-[#131318] text-white border-none">❯</a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-black lg:w-[502px] lg:h-28 rounded-lg lg:-translate-y-40 lg:translate-x-[700px] ">
+        <h3 class="text-2xl font-extrabold text-white px-8 pt-4">Meet all the heroes from the field</h3>
+        <p class="text-[#ffffff96] w-[500px] px-8 pb-4">Most of the popular players are presented in todays match. It is the greatest opportunity to meet your favourite one</p>
+      </div>
+  </div>
     </header>
-    <main>
-
+    <main class="container font-manrope mx-auto lg:px-32">
+        <section class="">
+            <div class="mx-auto text-center space-y-6">
+                <h2 class="text-4xl font-extrabold">Professional Hockeys Club</h2>
+                <p class="text-[#13131899] px-5 lg:w-[600px] mx-auto text-center">It ia the best club for Hockey player. There are available coaches, senior player, junior player with their recorded progression </p>
+              </div>
+             <div class="flex flex-col px-5 lg:flex-row mt-20">
+                <div class="card items-center w-96 bg-base-100">
+                    <div class="radial-progress text-red-500 rotate-180" style="--value:70;" role="progressbar"><span class="text-black rotate-180">87%</span></div>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-xl font-semibold">Prayer Facility</h2>
+                      <p>Players are welcomed cordially with some fantastic facilities. Read the blog for details.</p>
+                     
+                    </div>
+                  </div>
+                <div class="card items-center w-96 bg-base-100">
+                    <div class="radial-progress text-green-300 rotate-180" style="--value:70;" role="progressbar"><span class="text-black rotate-180">95%</span></div>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-xl font-semibold">Experienced Coach</h2>
+                      <p>One can find experienced coach among many. Read the blog for details.</p>
+                     
+                    </div>
+                  </div>
+                <div class="card items-center w-96 bg-base-100">
+                    <div class="radial-progress text-yellow-300 rotate-180" style="--value:70;" role="progressbar"><span class="text-black rotate-180">70%</span></div>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-xl font-semibold">Senior Player</h2>
+                      <p>Senior players are available here with lots of experience. Read the blog for details.</p>
+                     
+                    </div>
+                  </div>
+                <div class="card items-center w-96 bg-base-100">
+                    <div class="radial-progress rotate-180 text-blue-600" style="--value:80;" role="progressbar"><span class="rotate-180 text-black">80%</span></div>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-xl font-semibold">Training Ground</h2>
+                      <p>The training ground is designed with lots of planning abd research. Read the blog for details.</p>
+                     
+                    </div>
+                  </div>
+             </div>
+        </section>
+    
     </main>
     <footer>
 

@@ -36,6 +36,46 @@
 
 <body>
     <header>
+        <!-- navbar -->
+        <nav class="px-4 lg:px-36 my-12">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+
+                            <li><a><span class="text-[#FF4240]">Home</span></a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl font-extrabold">Hockey <span class="text-[#FF4240] ">’</span> s</a>
+                </div>
+                <div class="navbar-center text-[#424247] hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a><span class="text-[#FF4240]">Home</span></a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-8">
+                    <i class="fa-solid fa-magnifying-glass text-[#89898B] hidden lg:flex"></i>
+                    <a class="btn w-[100px] h-[27px] bg-[#FF4240] text-white">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- banner section -->
         <div class="container font-manrope px-5 py-10 mx-auto lg:px-32 lg:py-auto  ">
             <div class="carousel">
                 <div id="slide1" class="carousel-item relative w-full">
@@ -71,10 +111,10 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-black lg:w-[502px] lg:h-28 rounded-lg lg:-translate-y-40
+            <div class="bg-black w-[380px] lg:w-[502px] lg:h-28 rounded-lg lg:-translate-y-40
        lg:translate-x-[500px] ">
                 <h3 class="text-2xl font-extrabold text-white px-8 pt-4">Meet all the heroes from the field</h3>
-                <p class="text-[#ffffff96] w-[500px] px-8 pb-4">Most of the popular players are presented in todays
+                <p class="text-[#ffffff96] sm:-[300px] lg:w-[500px] px-8 pb-4">Most of the popular players are presented in todays
                     match. It is the greatest opportunity to meet your favourite one</p>
             </div>
         </div>
@@ -139,447 +179,526 @@
                     their experience. Here anybody can join according to their age and experience. </p>
             </div>
             <div class=" flex gap-6 flex-col lg:flex-row">
-               <div class="relative space-y-4 ">
-                <div>
-                    <img src="Images/2.png" alt="">
-                   </div>
-                   <div>
-                    <h2 class="card-title lg:pt-20 text-white font-extrabold absolute top-20 lg:top-12 left-10">Junior Program</h2>
-                    <p class="text-white w-[300px] lg:w-[390px] absolute top-28 lg:top-40 left-10">A child who is under 12 years old, will be able to join into this group. It is the first step of learning hockey.</p>
-                    <div class="card-actions justify-start">
-                        <button class="btn btn-primary w-[130px] h-[25px] bg-[#FF4240] border-[#FF4240] absolute bottom-6 lg:bottom-8 left-10">Register Now!</button>
+                <div class="relative space-y-4 ">
+                    <div>
+                        <img src="Images/2.png" alt="">
                     </div>
-                   </div>
-               </div>
-               <div class="relative">
-                <div>
-                    <img src="Images/3.png" alt="">
-                   </div>
-                   <div>
-                    <h2 class="card-title lg:pt-20 text-white font-extrabold absolute top-20 lg:top-12 left-10">Junior Program</h2>
-                    <p class="text-white w-[300px] lg:w-[390px] absolute top-28 lg:top-40 -right-40 left-10">A child who is under 12 years old, will be able to join into this group. It is the first step of learning hockey.</p>
-                    <div class="card-actions justify-start">
-                        <button class="btn btn-primary w-[130px] h-[25px] bg-[#FF4240] border-[#FF4240] absolute bottom-2 lg:bottom-8 left-10">Register Now!</button>
+                    <div>
+                        <h2 class="card-title lg:pt-20 text-white font-extrabold absolute top-20 lg:top-12 left-10">
+                            Junior Program</h2>
+                        <p class="text-white w-[300px] lg:w-[390px] absolute top-28 lg:top-40 left-10">A child who is
+                            under 12 years old, will be able to join into this group. It is the first step of learning
+                            hockey.</p>
+                        <div class="card-actions justify-start">
+                            <button
+                                class="btn btn-primary w-[130px] h-[25px] bg-[#FF4240] border-[#FF4240] absolute bottom-6 lg:bottom-8 left-10">Register
+                                Now!</button>
+                        </div>
                     </div>
-                   </div>
-               </div>
-               
+                </div>
+                <div class="relative">
+                    <div>
+                        <img src="Images/3.png" alt="">
+                    </div>
+                    <div>
+                        <h2 class="card-title lg:pt-20 text-white font-extrabold absolute top-20 lg:top-12 left-10">
+                            Junior Program</h2>
+                        <p class="text-white w-[300px] lg:w-[390px] absolute top-28 lg:top-40 -right-40 left-10">A child
+                            who is under 12 years old, will be able to join into this group. It is the first step of
+                            learning hockey.</p>
+                        <div class="card-actions justify-start">
+                            <button
+                                class="btn btn-primary w-[130px] h-[25px] bg-[#FF4240] border-[#FF4240] absolute bottom-2 lg:bottom-8 left-10">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-           <div class="relative mt-6">
-            <div>
-                <img src="Images/4.png" alt="">
-                 </div>
-                 <div>
-                    <h2 class="card-title lg:pt-20 text-white font-extrabold absolute top-1 lg:top-20 left-10">Professional Program</h2>
-                    <p class="text-white w-[300px] lg:w-[390px] absolute top-8 lg:top-48 left-10">Whenever a child or teenager will be able to gain enough knowledge, they can join to professional level. Read more for details</p>
+            <div class="relative mt-6">
+                <div>
+                    <img src="Images/4.png" alt="">
+                </div>
+                <div>
+                    <h2 class="card-title lg:pt-20 text-white font-extrabold absolute top-1 lg:top-20 left-10">
+                        Professional Program</h2>
+                    <p class="text-white w-[300px] lg:w-[390px] absolute top-8 lg:top-48 left-10">Whenever a child or
+                        teenager will be able to gain enough knowledge, they can join to professional level. Read more
+                        for details</p>
                     <div class="card-actions justify-start">
-                        <button class="btn btn-primary w-[130px] h-[25px] bg-[#FF4240] border-[#FF4240] absolute bottom-2 lg:bottom-16 left-10">Register Now!</button>
+                        <button
+                            class="btn btn-primary w-[130px] h-[25px] bg-[#FF4240] border-[#FF4240] absolute bottom-2 lg:bottom-16 left-10">Register
+                            Now!</button>
                     </div>
 
-                 </div>
-           </div>
+                </div>
+            </div>
         </section>
         <!-- new products section -->
-      <section class="px-4 lg:px-auto my-24">
-        <div class="mx-auto text-center mb-20 space-y-6">
-            <h2 class="text-4xl font-extrabold">Our New Products</h2>
-            <p class="text-[#13131899] px-5 lg:w-[600px] mx-auto text-center">For the upcoming Hockey world cup, here are some amazing products like cap, t-shirt and so on.</p>
-        </div>
-       <div class="grid grid-cols-1 lg:grid-cols-2">
-        <div>
-            <div class="hero bg-white">
-                <div class="hero-content flex-col lg:flex-row">
-                  <img class="w-[287px] lg:w-[180px]" src="./Images/5.png" class="max-w-sm rounded-lg" />
-                  <div>
-                   <div class="flex mb-4">
-                     <!-- rating and number -->
-                   <div class="flex items-center gap-2 mr-4">
-                    <div class="rating rating-xs">
-                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400 text-2xl text-[#13131880]" />
-                    </div>
-                    <div class="text-[#13131880]">5.0</div>
-                   </div>
-                   <!-- eye -->
-                   <div class="flex items-center text-[#13131880] gap-2 mr-4">
-                    <i class="fa-regular fa-eye"></i>
-                    <div>20</div>
-                   </div>
-                   <!-- heart icon -->
-                   <div class="flex items-center text-[#13131880] gap-2">
-                    <i class="fa-regular fa-heart"></i>
-                    <div>200</div>
-                   </div>
-                   </div>
-                    <h1 class="text-xl font-extrabold mb-4">World Cup Flags Jacket</h1>
-                    <p class="text-[#13131880]">This is the brand new jacket. Order before stock out.</p>
-                    <div class="flex items-center gap-5 space-y-4">
-                        <!-- price -->
-                       <div>
-                        <h3 class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</h3>
-                       </div>
-                       <!-- icon and text -->
-                       <div class="flex items-center gap-2 text-[#13131880]">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <div>
-                            <h3>Delivery Fee : Free</h3>
-                        </div>
-                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>
-        <div>
-            <div class="hero bg-white">
-                <div class="hero-content flex-col lg:flex-row">
-                  <img class="w-[287px] lg:w-[180px]" src="./Images/6.png" class="max-w-sm rounded-lg" />
-                  <div>
-                   <div class="flex mb-4">
-                     <!-- rating and number -->
-                   <div class="flex items-center gap-2 mr-4">
-                    <div class="rating rating-xs">
-                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400 text-2xl text-[#13131880]" />
-                    </div>
-                    <div class="text-[#13131880]">5.0</div>
-                   </div>
-                   <!-- eye -->
-                   <div class="flex items-center text-[#13131880] gap-2 mr-4">
-                    <i class="fa-regular fa-eye"></i>
-                    <div>22</div>
-                   </div>
-                   <!-- heart icon -->
-                   <div class="flex items-center text-[#13131880] gap-2">
-                    <i class="fa-regular fa-heart"></i>
-                    <div>205</div>
-                   </div>
-                   </div>
-                    <h1 class="text-xl font-extrabold mb-4">World Cup Flags Football</h1>
-                    <p class="text-[#13131880]">This is the brand new football. Order before stock out.</p>
-                    <div class="flex items-center gap-5 space-y-4">
-                        <!-- price -->
-                       <div>
-                        <h3 class="text-lg font-extrabold text-[#FF4240]">Price - $21.00</h3>
-                       </div>
-                       <!-- icon and text -->
-                       <div class="flex items-center gap-2 text-[#13131880]">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <div>
-                            <h3>Delivery Fee : Free</h3>
-                        </div>
-                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>
-        <div>
-            <div class="hero bg-white">
-                <div class="hero-content flex-col lg:flex-row">
-                  <img  class="w-[287px] lg:w-[180px]" src="./Images/7.png" class="max-w-sm rounded-lg" />
-                  <div>
-                   <div class="flex mb-4">
-                     <!-- rating and number -->
-                   <div class="flex items-center gap-2 mr-4">
-                    <div class="rating rating-xs">
-                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400 text-2xl text-[#13131880]" />
-                    </div>
-                    <div class="text-[#13131880]">5.0</div>
-                   </div>
-                   <!-- eye -->
-                   <div class="flex items-center text-[#13131880] gap-2 mr-4">
-                    <i class="fa-regular fa-eye"></i>
-                    <div>23</div>
-                   </div>
-                   <!-- heart icon -->
-                   <div class="flex items-center text-[#13131880] gap-2">
-                    <i class="fa-regular fa-heart"></i>
-                    <div>190</div>
-                   </div>
-                   </div>
-                    <h1 class="text-xl font-extrabold mb-4">Cap For Hockeys</h1>
-                    <p class="text-[#13131880]">This is the brand new cap. Order before stock out.</p>
-                    <div class="flex items-center gap-5 space-y-4">
-                        <!-- price -->
-                       <div>
-                        <h3 class="text-lg font-extrabold text-[#FF4240]">Price - $20.00</h3>
-                       </div>
-                       <!-- icon and text -->
-                       <div class="flex items-center gap-2 text-[#13131880]">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <div>
-                            <h3>Delivery Fee : Free</h3>
-                        </div>
-                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>
-        <div>
-            <div class="hero bg-white">
-                <div class="hero-content flex-col lg:flex-row">
-                  <img  class="w-[287px] lg:w-[180px]" src="./Images/8.png" class="max-w-sm rounded-lg" />
-                  <div>
-                   <div class="flex mb-4">
-                     <!-- rating and number -->
-                   <div class="flex items-center gap-2 mr-4">
-                    <div class="rating rating-xs">
-                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400 text-2xl text-[#13131880]" />
-                    </div>
-                    <div class="text-[#13131880]">5.0</div>
-                   </div>
-                   <!-- eye -->
-                   <div class="flex items-center text-[#13131880] gap-2 mr-4">
-                    <i class="fa-regular fa-eye"></i>
-                    <div>20</div>
-                   </div>
-                   <!-- heart icon -->
-                   <div class="flex items-center text-[#13131880] gap-2">
-                    <i class="fa-regular fa-heart"></i>
-                    <div>200</div>
-                   </div>
-                   </div>
-                    <h1 class="text-xl font-extrabold mb-4">World Cup Flags T-shirt</h1>
-                    <p class="text-[#13131880]">This is the brand new t-shirt. Order before stock out.</p>
-                    <div class="flex items-center gap-5 space-y-4">
-                        <!-- price -->
-                       <div>
-                        <h3 class="text-lg font-extrabold text-[#FF4240]">Price - $21.00</h3>
-                       </div>
-                       <!-- icon and text -->
-                       <div class="flex items-center gap-2 text-[#13131880]">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <div>
-                            <h3>Delivery Fee : Free</h3>
-                        </div>
-                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>
-        <div>
-            <div class="hero bg-white">
-                <div class="hero-content flex-col lg:flex-row">
-                  <img  class="w-[287px] lg:w-[180px]" src="./Images/9.png" class="max-w-sm rounded-lg" />
-                  <div>
-                   <div class="flex mb-4">
-                     <!-- rating and number -->
-                   <div class="flex items-center gap-2 mr-4">
-                    <div class="rating rating-xs">
-                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400 text-2xl text-[#13131880]" />
-                    </div>
-                    <div class="text-[#13131880]">5.0</div>
-                   </div>
-                   <!-- eye -->
-                   <div class="flex items-center text-[#13131880] gap-2 mr-4">
-                    <i class="fa-regular fa-eye"></i>
-                    <div>22</div>
-                   </div>
-                   <!-- heart icon -->
-                   <div class="flex items-center text-[#13131880] gap-2">
-                    <i class="fa-regular fa-heart"></i>
-                    <div>210</div>
-                   </div>
-                   </div>
-                    <h1 class="text-xl font-extrabold mb-4">World Cup Flags Helmet</h1>
-                    <p class="text-[#13131880]">This is the brand new helmet. Order before stock out.</p>
-                    <div class="flex items-center gap-5 space-y-4">
-                        <!-- price -->
-                       <div>
-                        <h3 class="text-lg font-extrabold text-[#FF4240]">Price - $23.00</h3>
-                       </div>
-                       <!-- icon and text -->
-                       <div class="flex items-center gap-2 text-[#13131880]">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <div>
-                            <h3>Delivery Fee : Free</h3>
-                        </div>
-                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>
-        <div>
-            <div class="hero bg-white">
-                <div class="hero-content flex-col lg:flex-row">
-                  <img  class="w-[287px] lg:w-[180px]" src="./Images/10.png" class="max-w-sm rounded-lg" />
-                  <div>
-                   <div class="flex mb-4">
-                     <!-- rating and number -->
-                   <div class="flex items-center gap-2 mr-4">
-                    <div class="rating rating-xs">
-                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400 text-2xl text-[#13131880]" />
-                    </div>
-                    <div class="text-[#13131880]">5.0</div>
-                   </div>
-                   <!-- eye -->
-                   <div class="flex items-center text-[#13131880] gap-2 mr-4">
-                    <i class="fa-regular fa-eye"></i>
-                    <div>23</div>
-                   </div>
-                   <!-- heart icon -->
-                   <div class="flex items-center text-[#13131880] gap-2">
-                    <i class="fa-regular fa-heart"></i>
-                    <div>210</div>
-                   </div>
-                   </div>
-                    <h1 class="text-xl font-extrabold mb-4">World Cup Flags Football</h1>
-                    <p class="text-[#13131880]">This is the brand new football. Order before stock out.</p>
-                    <div class="flex items-center gap-5 space-y-4">
-                        <!-- price -->
-                       <div>
-                        <h3 class="text-lg font-extrabold text-[#FF4240]">Price - $24.00</h3>
-                       </div>
-                       <!-- icon and text -->
-                       <div class="flex items-center gap-2 text-[#13131880]">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <div>
-                            <h3>Delivery Fee : Free</h3>
-                        </div>
-                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>
-       </div>
-      </section>
-      <!-- clients section -->
-      <section  class="px-4 lg:px-auto my-24">
-        <div class="mx-auto text-center mb-20 space-y-6">
-            <h2 class="text-4xl font-extrabold">Clients Question</h2>
-            <p class="text-[#13131899] px-5 lg:w-[600px] mx-auto text-center">One can know about the most asked questions from this section. Read carefully and clear your doubt.</p>
-        </div>
-        <div class="flex flex-col lg:flex-row gap-10">
-            <div class="flex-1">
-             <img src="./Images/11.png" alt="">
+        <section class="px-4 lg:px-auto my-24">
+            <div class="mx-auto text-center mb-20 space-y-6">
+                <h2 class="text-4xl font-extrabold">Our New Products</h2>
+                <p class="text-[#13131899] px-5 lg:w-[600px] mx-auto text-center">For the upcoming Hockey world cup,
+                    here are some amazing products like cap, t-shirt and so on.</p>
             </div>
-            <div class="flex-1">
-                <div class="py-3 collapse collapse-plus bg-base-200">
-                    <input type="radio" name="my-accordion-3" checked="checked" /> 
-                    <div class="collapse-title text-xl font-medium">
-                        Our Equipment
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                    <div class="hero bg-white">
+                        <div class="hero-content flex-col lg:flex-row">
+                            <img class="w-[287px] lg:w-[180px]" src="./Images/5.png" class="max-w-sm rounded-lg" />
+                            <div>
+                                <div class="flex mb-4">
+                                    <!-- rating and number -->
+                                    <div class="flex items-center gap-2 mr-4">
+                                        <div class="rating rating-xs">
+                                            <input type="radio" name="rating-5"
+                                                class="mask mask-star-2 bg-orange-400 text-2xl text-[#13131880]" />
+                                        </div>
+                                        <div class="text-[#13131880]">5.0</div>
+                                    </div>
+                                    <!-- eye -->
+                                    <div class="flex items-center text-[#13131880] gap-2 mr-4">
+                                        <i class="fa-regular fa-eye"></i>
+                                        <div>20</div>
+                                    </div>
+                                    <!-- heart icon -->
+                                    <div class="flex items-center text-[#13131880] gap-2">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <div>200</div>
+                                    </div>
+                                </div>
+                                <h1 class="text-xl font-extrabold mb-4">World Cup Flags Jacket</h1>
+                                <p class="text-[#13131880]">This is the brand new jacket. Order before stock out.</p>
+                                <div class="flex items-center gap-5 space-y-4">
+                                    <!-- price -->
+                                    <div>
+                                        <h3 class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</h3>
+                                    </div>
+                                    <!-- icon and text -->
+                                    <div class="flex items-center gap-2 text-[#13131880]">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <div>
+                                            <h3>Delivery Fee : Free</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="collapse-content"> 
-                      <p>We always take care of the comforts of our player with the best equipment.</p>
+                </div>
+                <div>
+                    <div class="hero bg-white">
+                        <div class="hero-content flex-col lg:flex-row">
+                            <img class="w-[287px] lg:w-[180px]" src="./Images/6.png" class="max-w-sm rounded-lg" />
+                            <div>
+                                <div class="flex mb-4">
+                                    <!-- rating and number -->
+                                    <div class="flex items-center gap-2 mr-4">
+                                        <div class="rating rating-xs">
+                                            <input type="radio" name="rating-5"
+                                                class="mask mask-star-2 bg-orange-400 text-2xl text-[#13131880]" />
+                                        </div>
+                                        <div class="text-[#13131880]">5.0</div>
+                                    </div>
+                                    <!-- eye -->
+                                    <div class="flex items-center text-[#13131880] gap-2 mr-4">
+                                        <i class="fa-regular fa-eye"></i>
+                                        <div>22</div>
+                                    </div>
+                                    <!-- heart icon -->
+                                    <div class="flex items-center text-[#13131880] gap-2">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <div>205</div>
+                                    </div>
+                                </div>
+                                <h1 class="text-xl font-extrabold mb-4">World Cup Flags Football</h1>
+                                <p class="text-[#13131880]">This is the brand new football. Order before stock out.</p>
+                                <div class="flex items-center gap-5 space-y-4">
+                                    <!-- price -->
+                                    <div>
+                                        <h3 class="text-lg font-extrabold text-[#FF4240]">Price - $21.00</h3>
+                                    </div>
+                                    <!-- icon and text -->
+                                    <div class="flex items-center gap-2 text-[#13131880]">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <div>
+                                            <h3>Delivery Fee : Free</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="collapse collapse-plus bg-base-200">
-                    <input type="radio" name="my-accordion-3" /> 
-                    <div class="collapse-title text-xl font-medium">
-                        Hockey Training
+                </div>
+                <div>
+                    <div class="hero bg-white">
+                        <div class="hero-content flex-col lg:flex-row">
+                            <img class="w-[287px] lg:w-[180px]" src="./Images/7.png" class="max-w-sm rounded-lg" />
+                            <div>
+                                <div class="flex mb-4">
+                                    <!-- rating and number -->
+                                    <div class="flex items-center gap-2 mr-4">
+                                        <div class="rating rating-xs">
+                                            <input type="radio" name="rating-5"
+                                                class="mask mask-star-2 bg-orange-400 text-2xl text-[#13131880]" />
+                                        </div>
+                                        <div class="text-[#13131880]">5.0</div>
+                                    </div>
+                                    <!-- eye -->
+                                    <div class="flex items-center text-[#13131880] gap-2 mr-4">
+                                        <i class="fa-regular fa-eye"></i>
+                                        <div>23</div>
+                                    </div>
+                                    <!-- heart icon -->
+                                    <div class="flex items-center text-[#13131880] gap-2">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <div>190</div>
+                                    </div>
+                                </div>
+                                <h1 class="text-xl font-extrabold mb-4">Cap For Hockeys</h1>
+                                <p class="text-[#13131880]">This is the brand new cap. Order before stock out.</p>
+                                <div class="flex items-center gap-5 space-y-4">
+                                    <!-- price -->
+                                    <div>
+                                        <h3 class="text-lg font-extrabold text-[#FF4240]">Price - $20.00</h3>
+                                    </div>
+                                    <!-- icon and text -->
+                                    <div class="flex items-center gap-2 text-[#13131880]">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <div>
+                                            <h3>Delivery Fee : Free</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="collapse-content"> 
-                      <p>Hockey is our main service. There are experienced trainers for giving training.</p>
+                </div>
+                <div>
+                    <div class="hero bg-white">
+                        <div class="hero-content flex-col lg:flex-row">
+                            <img class="w-[287px] lg:w-[180px]" src="./Images/8.png" class="max-w-sm rounded-lg" />
+                            <div>
+                                <div class="flex mb-4">
+                                    <!-- rating and number -->
+                                    <div class="flex items-center gap-2 mr-4">
+                                        <div class="rating rating-xs">
+                                            <input type="radio" name="rating-5"
+                                                class="mask mask-star-2 bg-orange-400 text-2xl text-[#13131880]" />
+                                        </div>
+                                        <div class="text-[#13131880]">5.0</div>
+                                    </div>
+                                    <!-- eye -->
+                                    <div class="flex items-center text-[#13131880] gap-2 mr-4">
+                                        <i class="fa-regular fa-eye"></i>
+                                        <div>20</div>
+                                    </div>
+                                    <!-- heart icon -->
+                                    <div class="flex items-center text-[#13131880] gap-2">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <div>200</div>
+                                    </div>
+                                </div>
+                                <h1 class="text-xl font-extrabold mb-4">World Cup Flags T-shirt</h1>
+                                <p class="text-[#13131880]">This is the brand new t-shirt. Order before stock out.</p>
+                                <div class="flex items-center gap-5 space-y-4">
+                                    <!-- price -->
+                                    <div>
+                                        <h3 class="text-lg font-extrabold text-[#FF4240]">Price - $21.00</h3>
+                                    </div>
+                                    <!-- icon and text -->
+                                    <div class="flex items-center gap-2 text-[#13131880]">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <div>
+                                            <h3>Delivery Fee : Free</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="collapse collapse-plus bg-base-200">
-                    <input type="radio" name="my-accordion-3" /> 
-                    <div class="collapse-title text-xl font-medium">
-                        Private Lessons
+                </div>
+                <div>
+                    <div class="hero bg-white">
+                        <div class="hero-content flex-col lg:flex-row">
+                            <img class="w-[287px] lg:w-[180px]" src="./Images/9.png" class="max-w-sm rounded-lg" />
+                            <div>
+                                <div class="flex mb-4">
+                                    <!-- rating and number -->
+                                    <div class="flex items-center gap-2 mr-4">
+                                        <div class="rating rating-xs">
+                                            <input type="radio" name="rating-5"
+                                                class="mask mask-star-2 bg-orange-400 text-2xl text-[#13131880]" />
+                                        </div>
+                                        <div class="text-[#13131880]">5.0</div>
+                                    </div>
+                                    <!-- eye -->
+                                    <div class="flex items-center text-[#13131880] gap-2 mr-4">
+                                        <i class="fa-regular fa-eye"></i>
+                                        <div>22</div>
+                                    </div>
+                                    <!-- heart icon -->
+                                    <div class="flex items-center text-[#13131880] gap-2">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <div>210</div>
+                                    </div>
+                                </div>
+                                <h1 class="text-xl font-extrabold mb-4">World Cup Flags Helmet</h1>
+                                <p class="text-[#13131880]">This is the brand new helmet. Order before stock out.</p>
+                                <div class="flex items-center gap-5 space-y-4">
+                                    <!-- price -->
+                                    <div>
+                                        <h3 class="text-lg font-extrabold text-[#FF4240]">Price - $23.00</h3>
+                                    </div>
+                                    <!-- icon and text -->
+                                    <div class="flex items-center gap-2 text-[#13131880]">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <div>
+                                            <h3>Delivery Fee : Free</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="collapse-content"> 
-                      <p>One can learn alone under a tutor. But it will be little bit costly</p>
+                </div>
+                <div>
+                    <div class="hero bg-white">
+                        <div class="hero-content flex-col lg:flex-row">
+                            <img class="w-[287px] lg:w-[180px]" src="./Images/10.png" class="max-w-sm rounded-lg" />
+                            <div>
+                                <div class="flex mb-4">
+                                    <!-- rating and number -->
+                                    <div class="flex items-center gap-2 mr-4">
+                                        <div class="rating rating-xs">
+                                            <input type="radio" name="rating-5"
+                                                class="mask mask-star-2 bg-orange-400 text-2xl text-[#13131880]" />
+                                        </div>
+                                        <div class="text-[#13131880]">5.0</div>
+                                    </div>
+                                    <!-- eye -->
+                                    <div class="flex items-center text-[#13131880] gap-2 mr-4">
+                                        <i class="fa-regular fa-eye"></i>
+                                        <div>23</div>
+                                    </div>
+                                    <!-- heart icon -->
+                                    <div class="flex items-center text-[#13131880] gap-2">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <div>210</div>
+                                    </div>
+                                </div>
+                                <h1 class="text-xl font-extrabold mb-4">World Cup Flags Football</h1>
+                                <p class="text-[#13131880]">This is the brand new football. Order before stock out.</p>
+                                <div class="flex items-center justify-center gap-5 space-y-4">
+                                    <!-- price -->
+                                    <div>
+                                        <h3 class="text-lg font-extrabold text-[#FF4240]">Price - $24.00</h3>
+                                    </div>
+                                    <!-- icon and text -->
+                                    <div class="flex items-center gap-2 text-[#13131880]">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <div>
+                                            <h3>Delivery Fee : Free</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="collapse collapse-plus bg-base-200">
-                    <input type="radio" name="my-accordion-3" /> 
-                    <div class="collapse-title text-xl font-medium">
-                        Ski Touring
-                    </div>
-                    <div class="collapse-content"> 
-                      <p>This service is given by a group of professionals via lots of entertainment.</p>
-                    </div>
-                  </div>
-                  <div class="collapse collapse-plus bg-base-200">
-                    <input type="radio" name="my-accordion-3" /> 
-                    <div class="collapse-title text-xl font-medium">
-                        Booking
-                    </div>
-                    <div class="collapse-content"> 
-                      <p>As we have a lots of member to admit, one have to be booked their seats 2 months earlier.</p>
-                    </div>
-                  </div>
-                  <div class="py-2 collapse collapse-plus bg-base-200">
-                    <input type="radio" name="my-accordion-3" /> 
-                    <div class="collapse-title text-xl font-medium">
-                        Pricings
-                    </div>
-                    <div class="collapse-content"> 
-                      <p>Price varies for individual lession and level. Please email us for details. </p>
-                    </div>
-                  </div>
+                </div>
             </div>
-        </div>
-      </section>
-      <!-- get in touch section -->
-      <section class="px-4 lg:px-auto my-24">
-        <div class="mx-auto text-center mb-20 space-y-6">
-            <h2 class="text-4xl font-extrabold">Get In Touch</h2>
-            <p class="text-[#13131899] px-5 lg:w-[600px] mx-auto text-center">By enter some information you can learn all of our updated within a minutes.Our contact info are given here.</p>
-        </div>
-      <div class="flex flex-col lg:flex-row">
-        <div class="flex-1">
-            <div class="bg-[#bced6d1a] w-[374px] h-[216px] rounded-2xl mb-6 pt-12 pl-20 pb-6">
-            <img src="./Images/Group 1171275317.png" alt="">
-            <p class="pb-12 pt-6">Phone Number :
-                <br> 
-                (+62) 123-321-543</p>
+        </section>
+        <!-- clients section -->
+        <section class="px-4 lg:px-auto my-24">
+            <div class="mx-auto text-center mb-20 space-y-6">
+                <h2 class="text-4xl font-extrabold">Clients Question</h2>
+                <p class="text-[#13131899] px-5 lg:w-[600px] mx-auto text-center">One can know about the most asked
+                    questions from this section. Read carefully and clear your doubt.</p>
             </div>
-            <div class="bg-[#fddd5f1a] w-[374px] h-[216px] rounded-2xl mb-6 pt-12 pl-20 pb-6">
-            <img src="./Images/Group 1171275318.png" alt="">
-            <p class="pb-12 pt-6">Email : 
-                <br>
-                hockeys@support.com>
+            <div class="flex flex-col lg:flex-row gap-10">
+                <div class="flex-1">
+                    <img src="./Images/11.png" alt="">
+                </div>
+                <div class="flex-1">
+                    <div class="py-3 collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content">
+                            <p>We always take care of the comforts of our player with the best equipment.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content">
+                            <p>Hockey is our main service. There are experienced trainers for giving training.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content">
+                            <p>One can learn alone under a tutor. But it will be little bit costly</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Ski Touring
+                        </div>
+                        <div class="collapse-content">
+                            <p>This service is given by a group of professionals via lots of entertainment.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Booking
+                        </div>
+                        <div class="collapse-content">
+                            <p>As we have a lots of member to admit, one have to be booked their seats 2 months earlier.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="py-2 collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Pricings
+                        </div>
+                        <div class="collapse-content">
+                            <p>Price varies for individual lession and level. Please email us for details. </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-[#629cf31a] w-[374px] h-[216px] rounded-2xl mb-6 pt-12 pl-20 pb-6">
-            <img src="./Images/Group 1171275321.png" alt="">
-            <p class="pb-12 pt-6">Location : 
-                <br>
-                152/1 Mohakhali Wireless Gate
+        </section>
+        <!-- get in touch section -->
+        <section class="px-4 lg:px-auto my-24">
+            <div class="mx-auto text-center mb-20 space-y-6">
+                <h2 class="text-4xl font-extrabold">Get In Touch</h2>
+                <p class="text-[#13131899] px-5 lg:w-[600px] mx-auto text-center">By enter some information you can
+                    learn all of our updated within a minutes.Our contact info are given here.</p>
             </div>
-            
-          </div>
-          <div class=" sm: px-4 flex-1 grid grid-cols-1 lg:grid-cols-2">
-            <form action="">
-                Your Name <br>
-                <input class="bg-[#13131808] w-[200px] h-[40px]" placeholder="Enter your name" type="text" name="Your Name" id="">
-            </form>
-            <form action="">
-                Your Email <br>
-                <input class="bg-[#13131808] w-[200px] h-[40px]" placeholder=" Enter your email" type="email" name="" id="">
-            </form>
-            <form action="">
-                Subject <br>
-                <input class="bg-[#13131808] w-[200px] h-[40px]" placeholder="Enter your subject " type="text" name="" id="">
-            </form>
-            <form action="">
-                Phone Number <br>
-                <input class="bg-[#13131808] w-[200px] h-[40px]" placeholder="Enter your phone number " type="number" name="" id="">
-            </form>
-           <div class="mt-6">
-            Message <br>
-            <textarea class="resize-x w-[330px]" placeholder="Write your message" name="" id="" cols="50" rows="10"></textarea>
-            <button class="text-white bg-[#FF4240] w-[330px] h-[25px] lg:w-[435px] lg:h-[27px] rounded-lg mt-8">Send Message</button>
-           </div>
-             
-          </div>
-      </div>
-      <div class="mt-12  bg-[#13131808] rounded-lg px-5 w-[380px] lg:w-auto h-[150px] pt-8">
-       <h3 class="flex justify-center text-2xl font-extrabold mb-6">Social Media</h3>
-       <div class=" flex justify-center space-x-2">
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-github"></i>
-       </div>
-      </div>
-      </section>
-    </main>
-    <footer>
+            <div class="flex flex-col lg:flex-row">
+                <div class="flex-1">
+                    <div class="bg-[#bced6d1a] w-[374px] h-[216px] rounded-2xl mb-6 pt-12 pl-20 pb-6">
+                        <img src="./Images/Group 1171275317.png" alt="">
+                        <p class="pb-12 pt-6">Phone Number :
+                            <br>
+                            (+62) 123-321-543
+                        </p>
+                    </div>
+                    <div class="bg-[#fddd5f1a] w-[374px] h-[216px] rounded-2xl mb-6 pt-12 pl-20 pb-6">
+                        <img src="./Images/Group 1171275318.png" alt="">
+                        <p class="pb-12 pt-6">Email :
+                            <br>
+                            hockeys@support.com>
+                    </div>
+                    <div class="bg-[#629cf31a] w-[374px] h-[216px] rounded-2xl mb-6 pt-12 pl-20 pb-6">
+                        <img src="./Images/Group 1171275321.png" alt="">
+                        <p class="pb-12 pt-6">Location :
+                            <br>
+                            152/1 Mohakhali Wireless Gate
+                    </div>
 
+                </div>
+                <div class=" sm: px-4 flex-1 grid grid-cols-1 lg:grid-cols-2">
+                    <form action="">
+                        Your Name <br>
+                        <input class="bg-[#13131808] w-[200px] h-[40px]" placeholder="Enter your name" type="text"
+                            name="Your Name" id="">
+                    </form>
+                    <form action="">
+                        Your Email <br>
+                        <input class="bg-[#13131808] w-[200px] h-[40px]" placeholder=" Enter your email" type="email"
+                            name="" id="">
+                    </form>
+                    <form action="">
+                        Subject <br>
+                        <input class="bg-[#13131808] w-[200px] h-[40px]" placeholder="Enter your subject " type="text"
+                            name="" id="">
+                    </form>
+                    <form action="">
+                        Phone Number <br>
+                        <input class="bg-[#13131808] w-[200px] h-[40px]" placeholder="Enter your phone number "
+                            type="number" name="" id="">
+                    </form>
+                    <div class="mt-6">
+                        Message <br>
+                        <textarea class="resize-x w-[330px]" placeholder="Write your message" name="" id="" cols="50"
+                            rows="10"></textarea>
+                        <button
+                            class="text-white bg-[#FF4240] w-[330px] h-[25px] lg:w-[435px] lg:h-[27px] rounded-lg mt-8">Send
+                            Message</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mt-12  bg-[#13131808] rounded-lg px-5 w-[380px] lg:w-auto h-[150px] pt-8">
+                <h3 class="flex justify-center text-2xl font-extrabold mb-6">Social Media</h3>
+                <div class=" flex justify-center space-x-2">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer sm:w-[335px] lg:w-full mx-4 px-32 py-24 bg-[#131318] text-base-content">
+        <aside class="sm:grid grid-cols-1">
+            <header class="footer-title mb-4 text-white text-lg font-bold">Get In Touch</header>
+            <p class=" lg:w-[345px] mb-3 text-[#ffffff94]">If you want to know any information, Ask your questions at any
+                time. We will reply you in an hour.</p>
+            <div class="flex items-center gap-3">
+                <i class="fa-regular fa-envelope text-[#FF4240]"></i>
+                <h2 class="text-[#ffffff94]">hockeys@support.com</h2>
+            </div>
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-phone text-[#FF4240]"></i>
+                <h2 class="text-[#ffffff94]">(+62) 123-321-543</h2>
+            </div>
+        </aside>
+        <div class="sm:grid grid-cols-2 gap-10 lg:gap-36">
+            <nav class="text-[#ffffff94]">
+                <header class="footer-title mb-5 text-white text-lg font-bold">Company</header>
+                <ul>
+                    <li><a class="link link-hover">About us</a></li>
+                    <li> <a class="link link-hover">Leadership</a></li>
+                    <li> <a class="link link-hover">Careers</a></li>
+                    <li> <a class="link link-hover">News & Articles</a></li>
+                    <li><a class="link link-hover">Legal Notice</a></li>
+                </ul>
+            </nav>
+            <nav class="text-[#ffffff94]">
+                <header class="footer-title mb-5 text-white text-lg font-bold">Support</header>
+                <ul>
+                    <li><a class="link link-hover">Help Center</a></li>
+                <li><a class="link link-hover">FAQ</a></li>
+                <li><a class="link link-hover">Ticket Support</a></li>
+                <li><a class="link link-hover">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+       <div class=" sm:grid grid-cols-1 ">
+        <nav class="text-[#ffffff94]">
+            <header class="footer-title mb-5 text-white text-lg font-bold">Services</header>
+            <ul>
+                <li><a class="link link-hover">Academy</a></li>
+            <li><a class="link link-hover">Group Lesson</a></li>
+            <li><a class="link link-hover">Private Lesson</a></li>
+            <li><a class="link link-hover">Hockeys for Kids</a></li>
+            <li><a class="link link-hover">Hockeys for Adult</a></li>
+            </ul>
+        </nav>
+       </div>
     </footer>
 </body>
 
